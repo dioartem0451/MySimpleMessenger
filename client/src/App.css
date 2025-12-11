@@ -1,0 +1,53 @@
+*{
+  transition:all 0.1s ease-in-out;
+}
+body {
+  height: 100vh;
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+.win{
+  background-color: #8ebad5a1;
+  width: 89vw;
+  height: 92vh;
+  border: 2px solid #ffffff00;
+  border-radius: 10px;
+}
+.chat{
+  margin: 5px;
+  background-color: white;
+  color: white;
+  height: 88%;
+  padding: 10px;
+  overflow-y: scroll;
+}
+.controls{
+  height: 10%;
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+input, button{
+  height: 60%;
+  border: 0;
+  border-radius: 5px;
+  background-color: rgb(215, 250, 255);
+  color: rgb(0, 0, 0);
+}
+input{
+  width: 80%;
+}
+input::placeholder{
+  color:rgb(0, 0, 0);
+}
+button{
+  width: 20%;
+  cursor: pointer;
+}
+button:hover{
+  background-color: rgba(215, 250, 255, 0.538);
+}
