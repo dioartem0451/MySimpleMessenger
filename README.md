@@ -8,8 +8,12 @@ npm run dev
 ```  
 из директории \server в терминал ввести команды  
 ```
-.\venv\Scripts\Activate.ps1  
-pip install uvicorn, fastapi, sqlalchemy, aiosqlite, websockets  
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install uvicorn fastapi sqlalchemy aiosqlite websockets passlib[bcrypt] argon2_cffi alembic
+alembic stamp head
+alembic revision --autogenerate
+alembic upgrade head
 uvicorn main:app --reload
 ```
 Приложение по умолчанию запускается по адресу "http://localhost:5173/"  

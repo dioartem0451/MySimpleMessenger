@@ -1,5 +1,6 @@
 .message{
-    width: 300px;
+    width: fit-content;
+    max-width: 60%;
     
 }
 .author{

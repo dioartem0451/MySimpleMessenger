@@ -1,6 +1,9 @@
 *{
   transition:all 0.1s ease-in-out;
 }
+h1{
+  text-align: center;
+}
 body {
   height: 100vh;
   display:  flex;
@@ -39,15 +42,37 @@ input, button{
   color: rgb(0, 0, 0);
 }
 input{
-  width: 80%;
+  width: 99%;
+  margin: 2px;
 }
 input::placeholder{
   color:rgb(0, 0, 0);
 }
 button{
   width: 20%;
+  margin: 5px;
+  padding: 5px;
   cursor: pointer;
 }
 button:hover{
   background-color: rgba(215, 250, 255, 0.538);
+}
+.user_controls{
+  display: flex;
+}
+.skip{
+  width: 55%;
+}
+.create_user{
+  margin-right: auto;
+}
+.info{
+  display: flex;
+}
+.skip_info{
+  width: 40%;
+  display: flex;
+  margin-left: 500px;
+  margin-top: 20px;
+  align-items: center;
 }
